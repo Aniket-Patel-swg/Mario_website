@@ -1,0 +1,205 @@
+
+header{
+    background-color: #F63232;
+    text-align: center;
+    position: fixed;   
+    z-index: 1;
+    width: 100%;
+    padding: 5.5px;
+    left: 0px;
+    top: 0px;
+}
+#maintext{
+    
+    color: white;
+    border: 4.5px solid white;
+    padding: 5px 10px;
+    display: inline-block; /* know more about this */
+    border-radius: 18px;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    position: absolute;
+    left: 0%;
+    top: 25%;
+    background-color: #feb614;
+    color: white;
+    padding: 35px;
+    font-size: 45px;
+}
+#welcome-text{
+   font-size: 1.2em;
+}
+.main-nav{
+    background-color: #F4F4F4;
+    padding: 20px;
+    position: sticky;
+    top: 106px;
+}
+nav ul{
+    white-space: nowrap; /* know more about this */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 18px;   
+}
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+.join-link{
+    color: #18ea3f;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;  
+    box-sizing: border-box;
+}
+article h2{
+    color: #F63232;
+    font-size: 40px;
+}
+article p{
+    line-height: 2em;
+    color: #4b4b4b;
+}
+.images{
+    text-align: center;
+    margin: 70px 0;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img{
+    max-width: 100%;
+}
+.join{
+    background-color: #F4F4F4;
+    text-align: center;
+    padding: 60px 120px;
+    color: #4b4b4b;
+}
+#last-header{
+    font-size: 35px;
+}
+form input{
+    margin: 20px;
+    padding: 8px 16px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 4px solid white; 
+}
+footer{
+    background: #f33535 30%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Pseudo classes */
+
+nav li a:hover{
+    text-decoration: underline;
+}
+.images li:hover{
+    position: relative;
+    top: -4px;
+}
+
+/* form input:focus{
+    border: 2px dashed #4b4b4b;
+}
+*/
+form input:valid{
+    border: 4px solid #71d300;
+}
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+section.join p::first-letter{
+    font-size: 1.2em;
+    color: #71d300;
+}
+section.join p::selection{
+    background-color: rgb(255, 255, 140);
+}
+p::selection{
+    background-color: cadetblue;
+}
+p::after{
+    content: '...';
+}
+/* responsive design 
+Media queries 
+viewport meta tag
+responsive images (learn more about them)
+*/
+
+/* MOBILE FIRST APPROACH IS BEST FOR RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1400px){
+    
+   .banner .welcome h2{
+    font-size: 40px;
+   } 
+   nav li{
+    font-size: 18px;
+   }
+
+}
+@media screen and (max-width: 960px){
+    
+    .banner .welcome h2{
+     font-size: 25px;
+    } 
+}
+@media screen and (max-width: 700px){
+    
+    .banner .welcome {
+      position: relative;
+      text-align: center;
+      padding: 15px;
+    } 
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 20px;
+    }
+    .banner .welcome #welcome-text{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+    
+ }
+ @media screen and (max-width: 560px){
+    nav li{
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    .banner .welcome{
+        padding: 12px;
+    }
+    .banner .welcome{
+        position: relative;
+    }
+ }
